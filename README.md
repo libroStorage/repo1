@@ -20,9 +20,8 @@ This repository contains a project website that showcases 13 mini projects. Each
 
 ## Usage
 
-1. Clone the repository: `git clone https://github.com/yourusername/mini-project-showcase.git`
-2. Navigate to the project directory: `cd mini-project-showcase`
-3. Open any project's directory to view the source code and launch the projects.
+Clone the repository: `git clone https://github.com/bugra-isik/13Projects`
+
 
 ## Contributing
 
