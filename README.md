@@ -5,7 +5,6 @@ This repository contains a project website that showcases 13 mini projects. Each
 ![image](https://github.com/bugra-isik/13Projects/assets/120986459/25071b74-8eba-40b5-86b9-27107de7d5e9)
 
 
-
 ## Projects
 
 1. **Shopping List**: An interactive shopping list app.
@@ -27,9 +26,17 @@ This repository contains a project website that showcases 13 mini projects. Each
 Clone the repository: `git clone https://github.com/bugra-isik/13Projects`
 
 
+## Technologies Used
+
+- HTML5
+- Tailwind CSS
+- JavaScript
+  
+
 ## Contributing
 
 Contributions are welcome! Feel free to submit pull requests to improve existing projects or add new ones.
+
 
 ## License
 
