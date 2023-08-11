@@ -2,6 +2,8 @@
 
 This repository contains a project website that showcases 13 mini projects. Each project is a small, standalone piece of work designed to demonstrate different concepts or skills.
 
+![image](https://prnt.sc/4FtJBYsnzhqn)
+
 ## Projects
 
 1. **Shopping List**: An interactive shopping list app.
