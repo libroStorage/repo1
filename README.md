@@ -27,6 +27,4 @@ Clone the repository: `git clone https://github.com/bugra-isik/13Projects`
 
 Contributions are welcome! Feel free to submit pull requests to improve existing projects or add new ones.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
