@@ -13,10 +13,10 @@ This repository contains a project website that showcases 13 mini projects. Each
 4. **Count Down**: Countdown timer for specific events.
 5. **About**: About page for anything (using the tab feature).
 6. **Modal**: Modal window implementation.
-7. **Slider**: Image slider with smooth transitions.
-8. **Scroll Landing Page**: Landing page with scroll animations.
+7. **Slider**: Image slider.
+8. **Scroll Landing Page**: Landing page with scroll.
 9. **Video BG**: Video background component.
-10. **Question**: Interactive quiz-like component.
+10. **Question**: Expandable/collapsible feature presentation.
 11. **Navbar**: Navigation bar with responsive design.
 12. **Color Flipper**: Random color generator.
 13. **Counter**: Simple counter app.
