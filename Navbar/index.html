@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav
+      class="font-mono container m-auto grid grid-cols-6 justify-between items-center w-full bg-black h-20 select-none"
+    >
+      <ul class="flex col-span-1 items-center justify-center">
+        <li class="bg-blue-400 text-blue-950 px-5 text-xs lg:text-2xl">LOGO</li>
+      </ul>
+      <ul
+        class="flex col-span-4 justify-self-center items-center text-blue-500 gap-2 sm:gap-10 lg:gap-20 text-xs lg:text-2xl"
+      >
+        <li class="cursor-pointer hover:text-blue-300">Home</li>
+        <li class="cursor-pointer hover:text-blue-300">About</li>
+        <li class="cursor-pointer hover:text-blue-300">Projects</li>
+        <li class="cursor-pointer hover:text-blue-300">Contact</li>
+      </ul>
+      <ul
+        class="flex text-base lg:hidden text-white col-span-1 items-center justify-center"
+      >
+        <i
+          id="menu"
+          class="fa-solid fa-bars"
+        ></i>
+      </ul>
+      <ul
+        class="hidden lg:flex col-span-1 items-center justify-center gap-5 text-2xl cursor-pointer"
+      >
+        <i class="fa-brands fa-square-facebook text-blue-400"></i>
+        <i class="fa-brands fa-square-x-twitter text-blue-400"></i>
+        <i class="fa-brands fa-square-github text-blue-400"></i>
+      </ul>
+    </nav>
+    <main
+      class="lg:hidden container flex m-auto w-full justify-end select-none font-mono"
+    >
+      <section
+        id="section"
+        class="hidden flex items-center justify-center w-1/6 h-32 bg-slate-700 -z-20 transition duration-700"
+      >
+        <ul class="flex flex-col items-center justify-end gap-5 text-2xl">
+          <i class="fa-brands fa-square-facebook text-blue-400"></i>
+          <i class="fa-brands fa-square-x-twitter text-blue-400"></i>
+          <i class="fa-brands fa-square-github text-blue-400"></i>
+        </ul>
+      </section>
+    </main>
+
+    <script>
+      const menu = document.getElementById('menu');
+      const section = document.getElementById('section');
+
+      menu.addEventListener('click', () => {
+        section.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

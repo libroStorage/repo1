@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Video Background</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="fixed">
+    <video
+      id="video"
+      class="relative -z-10"
+      muted
+      autoplay
+      loop
+    >
+      <source
+        class=""
+        src="test.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div
+      class="z-10 absolute flex items-center justify-center inset-0 bg-black/40"
+    >
+      <div class="text-white">
+        <button
+          id="play"
+          class="text-3xl w-40 h-20 bg-slate-950 hover:bg-slate-900 focus:translate-y-5 transition duration-300"
+        >
+          Play
+        </button>
+        <button
+          id="pause"
+          class="text-3xl w-40 h-20 bg-slate-950 hover:bg-slate-900 focus:translate-y-5 transition duration-300"
+        >
+          Pause
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const video = document.getElementById('video');
+      const play = document.getElementById('play');
+      const pause = document.getElementById('pause');
+
+      play.addEventListener('click', () => video.play()); 
+
+      pause.addEventListener('click', () => video.pause());
+    });
+  </script>
+</html>

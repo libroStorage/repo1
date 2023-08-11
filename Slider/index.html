@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-[#1f1f1f] text-white"
+  >
+    <main class="h-1/2 w-1/2 m-auto mt-20">
+      <img
+        id="1"
+        src="1.jpg"
+        alt=""
+        class=""
+      />
+      <img
+        id="2"
+        src="2.jpg"
+        alt=""
+        class="hidden"
+      />
+      <img
+        id="3"
+        src="3.jpg"
+        alt=""
+        class="hidden"
+      />
+      <img
+        id="4"
+        src="4.jpg"
+        alt=""
+        class="hidden"
+      />
+    </main>
+    <section class="flex gap-10 justify-center mt-10 ">
+      <button
+        id="previous"
+        class="px-8 py-2 rounded-lg text-3xl bg-black hover:scale-90 transition duration-300"
+      >
+        Previous
+      </button>
+      <button
+        id="next"
+        class="px-8 py-2 rounded-lg text-3xl bg-black hover:scale-90 transition duration-300"
+      >
+        Next
+      </button>
+    </section>
+  </body>
+  <script src="app.js"></script>
+</html>

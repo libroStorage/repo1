@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Random People</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="block lg:hidden text-5xl text-center pt-20 bg-[#18181a] h-screen text-white"
+    >
+      This project is not optimized for mobile devices.
+    </div>
+    <main
+      class="hidden lg:flex flex-col gap-5 justify-center items-center h-screen bg-[#1f1f1f] text-white"
+    >
+      <section
+        class="w-1/2 h-2/3 bg-[#181818] drop-shadow-xl rounded border-8 border-[#2b2a33]"
+      >
+        <ul class="h-full w-full">
+          <li
+            class="flex items-center justify-center h-1/3 w-full border-b-4 border-[#2b2a33]"
+          >
+            <div class="lg:scale-75 2xl:scale-100 rounded-full overflow-hidden">
+              <span id="picture"></span>
+            </div>
+          </li>
+          <li
+            class="flex items-center justify-center h-1/3 w-full border-b-4 border-[#2b2a33]"
+          >
+            <div
+              id="content"
+              class="lg:text-3xl 2xl:text-5xl"
+            >
+              Click the buttons below to see info.
+            </div>
+          </li>
+          <li class="flex items-center justify-around h-1/3 w-full select-none">
+            <div
+              id="name"
+              class="flex items-center justify-center w-24 h-12 rounded-lg bg-black hover:bg-slate-950 transition-colors duration-300 cursor-pointer"
+            ></div>
+            <div
+              id="mail"
+              class="flex items-center justify-center gap-2 w-24 h-12 rounded-lg bg-black hover:bg-slate-950 transition-colors duration-300 cursor-pointer"
+            ></div>
+            <div
+              id="age"
+              class="flex items-center justify-center gap-2 w-24 h-12 rounded-lg bg-black hover:bg-slate-950 transition-colors duration-300 cursor-pointer"
+            ></div>
+            <div
+              id="adress"
+              class="flex items-center justify-center gap-2 w-24 h-12 rounded-lg bg-black hover:bg-slate-950 transition-colors duration-300 cursor-pointer"
+            ></div>
+            <div
+              id="phone"
+              class="flex items-center justify-center gap-2 w-24 h-12 rounded-lg bg-black hover:bg-slate-950 cursor-pointer"
+            ></div>
+            <div
+              id="country"
+              class="flex items-center justify-center gap-2 w-24 h-12 rounded-lg bg-black hover:bg-slate-950 transition-colors duration-300 cursor-pointer"
+            ></div>
+          </li>
+        </ul>
+      </section>
+      <section class="flex justify-center items-center w-full">
+        <button
+          id="refresh"
+          class="bg-black hover:bg-slate-950 px-16 py-8 rounded-3xl transition-colors duration-300 lg:text-lg 2xl:text-3xl"
+          type="button"
+        >
+          Change Person!
+        </button>
+      </section>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>

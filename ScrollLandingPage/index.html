@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      id="home"
+      class="relative flex flex-col h-screen"
+    >
+      <img
+        class="h-full lg:h-auto w-full absolute -z-10"
+        src="bg.jpg"
+        alt=""
+        srcset=""
+      />
+      <section class="hidden sm:block h-1/2">
+        <nav
+          id="nav"
+          class="z-10 px-5 w-full text-white font-black font-sans sm:text-xl text-3xl drop-shadow transition-colors duration-300"
+        >
+          <div class="h-28 flex justify-between items-center container m-auto">
+            <ul>
+              <li class="select-none bg-black px-4 py-2 text-white"><a href="#home">LOGO</a></li>
+            </ul>
+            <ul class="flex justify-around gap-10">
+              <li class="hover:text-teal-300 cursor-pointer select-none">
+                <a href="#home">Home</a>
+              </li>
+              <li class="hover:text-teal-300 cursor-pointer select-none">
+                <a href="#about">About</a>
+              </li>
+              <li class="hover:text-teal-300 cursor-pointer select-none">
+                Services
+              </li>
+              <li class="hover:text-teal-300 cursor-pointer select-none">
+                <a href="#tours">Tours</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      <section class="sm:hidden">
+        <sidebar
+          id="sidebar"
+          class="z-50 absolute top-0 left-0 inset-y-0 bg-black w-1/2 h-full text-white -translate-x-full transition duration-300"
+        >
+          <ul class="flex flex-col justify-around gap-10 pl-10 pt-5">
+            <li class="hover:text-teal-300 cursor-pointer select-none">
+              <a href="#home">Home</a>
+            </li>
+            <li class="hover:text-teal-300 cursor-pointer select-none">
+              <a href="#about">About</a>
+            </li>
+            <li class="hover:text-teal-300 cursor-pointer select-none">
+              Services
+            </li>
+            <li class="hover:text-teal-300 cursor-pointer select-none">
+              <a href="#tours">Tours</a>
+            </li>
+          </ul>
+        </sidebar>
+        <nav
+          class="z-10 px-5 w-full text-white font-black font-sans sm:text-xl text-3xl drop-shadow transition-colors duration-300"
+        >
+          <div class="h-28 flex justify-between items-center container m-auto">
+            <button
+              id="x"
+              class="text-black z-50"
+            >
+              X
+            </button>
+            <div class="select-none bg-black px-4 py-2 text-white">LOGO</div>
+          </div>
+        </nav>
+      </section>
+      <section class="flex flex-col items-center w-full sm:h-1/2 my-20 lg:m-0">
+        <h1 class="font-black text-center text-black text-5xl lg:text-7xl">
+          Scroll Landing Page
+        </h1>
+        <p
+          class="w-1/2 hyphens-auto text-center text-black text-lg lg:text-2xl mt-5"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+          inventore libero corporis optio obcaecati in at architecto magnam
+          reprehenderit cum.
+        </p>
+        <button
+          class="backdrop-blur border border-black text-black sm:text-3xl text-5xl mt-5 p-2 rounded hover:scale-110 transition"
+        >
+          Explore Tours
+        </button>
+      </section>
+    </main>
+    <main
+      id="about"
+      class="w-full h-screen"
+    >
+      <section>
+        <h1
+          class="font-black text-center text-black sm:text-5xl text-7xl pt-32"
+        >
+          About Us
+        </h1>
+      </section>
+    </main>
+    <main
+      id="tours"
+      class="w-full"
+    >
+      <section class="h-52 lg:h-auto">
+        <h1 class="font-black text-center text-black sm:text-5xl text-7xl mt-5">
+          Tours
+        </h1>
+      </section>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>

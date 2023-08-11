@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Questions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="bg-[#1d1d1d] text-white flex items-center justify-center h-screen"
+  >
+    <main class="w-[1000px] h-[750px] bg-black flex flex-col items-center">
+      <header>
+        <h1 class="text-7xl my-10 text-amber-500">Questions</h1>
+      </header>
+      <ul class="flex flex-col justify-center gap-5">
+        <li class="bg-[#1d1d1d] w-[750px] p-5">
+          <div class="flex justify-between items-center">
+            <div class="text-4xl text-amber-500 mb-2">
+              What is the capital city of Australia?
+            </div>
+            <i
+              id="arrow1"
+              class="fa-solid fa-chevron-left text-3xl cursor-pointer right-0 px-5 transition"
+            ></i>
+          </div>
+          <span
+            id="q1"
+            class="hidden"
+          >
+            The capital city of Australia is Canberra. Canberra is located in
+            the southeastern part of the country and serves as the political and
+            administrative center of Australia. It was purpose-built as the
+            capital in the early 20th century and is home to important
+            government buildings, including the Parliament House.
+          </span>
+        </li>
+        <li class="bg-[#1d1d1d] relative w-[750px] p-5">
+          <div class="flex justify-between items-center">
+            <div class="text-4xl text-amber-500 mb-2">
+              How many planets are there in our solar system?
+            </div>
+            <i
+              id="arrow2"
+              class="fa-solid fa-chevron-left text-3xl cursor-pointer right-0 px-5 transition"
+            ></i>
+          </div>
+          <span
+            id="q2"
+            class="hidden"
+          >
+            As of my last update in September 2021, there are eight recognized
+            planets in our solar system: 1. Mercury 2. Venus 3. Earth 4. Mars 5.
+            Jupiter 6. Saturn 7. Uranus 8. Neptune Pluto was considered the
+            ninth planet until 2006 when it was reclassified as a "dwarf planet"
+            by the International Astronomical Union (IAU).
+          </span>
+        </li>
+        <li class="bg-[#1d1d1d] relative w-[750px] p-5">
+          <div class="flex justify-between items-center">
+            <div class="text-4xl text-amber-500 mb-2">
+              Who is the author of the famous novel "To Kill a Mockingbird"?
+            </div>
+            <i
+              id="arrow3"
+              class="fa-solid fa-chevron-left text-3xl cursor-pointer right-0 px-5 transition"
+            ></i>
+          </div>
+          <span
+            id="q3"
+            class="hidden"
+          >
+            The author of the famous novel "To Kill a Mockingbird" is Harper
+            Lee. The novel was published in 1960 and became an instant classic.
+            It addresses themes of racial injustice, moral growth, and the loss
+            of innocence, and it has had a significant impact on literature and
+            discussions about civil rights. Harper Lee's work continues to be
+            widely read and studied in schools and universities worldwide.
+          </span>
+        </li>
+      </ul>
+    </main>
+  </body>
+
+  <script>
+    const q1 = document.getElementById('q1');
+    const q2 = document.getElementById('q2');
+    const q3 = document.getElementById('q3');
+    const arrow1 = document.getElementById('arrow1');
+    const arrow2 = document.getElementById('arrow2');
+    const arrow3 = document.getElementById('arrow3');
+
+    arrow1.addEventListener('click', function () {
+      q1.classList.toggle('hidden');
+      arrow1.classList.toggle('-rotate-90');
+    });
+    arrow2.addEventListener('click', function () {
+      q2.classList.toggle('hidden');
+      arrow2.classList.toggle('-rotate-90');
+    });
+    arrow3.addEventListener('click', function () {
+      q3.classList.toggle('hidden');
+      arrow3.classList.toggle('-rotate-90');
+    });
+  </script>
+</html>
