@@ -2,7 +2,9 @@
 
 This repository contains a project website that showcases 13 mini projects. Each project is a small, standalone piece of work designed to demonstrate different concepts or skills.
 
-![image](https://prnt.sc/4FtJBYsnzhqn)
+![image](https://github.com/bugra-isik/13Projects/assets/120986459/25071b74-8eba-40b5-86b9-27107de7d5e9)
+
+
 
 ## Projects
 
