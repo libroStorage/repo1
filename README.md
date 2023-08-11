@@ -11,7 +11,7 @@ This repository contains a project website that showcases 13 mini projects. Each
 2. **Text Generator**: Generate random text using various algorithms.
 3. **Random People**: Fetch and display random user profiles.
 4. **Count Down**: Countdown timer for specific events.
-5. **About**: Information page about the project.
+5. **About**: About page for anything (using the tab feature).
 6. **Modal**: Modal window implementation.
 7. **Slider**: Image slider with smooth transitions.
 8. **Scroll Landing Page**: Landing page with scroll animations.
